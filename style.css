@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Crimson Text', serif; */
+  /* font-size: 10px; */
+  font-family: 'Lora', serif;
+}
+
+body{
+  background: #eee;
+  padding: 1rem;
+  background-color: #97AC83; /* Seafoam */
+  background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.App{
+  /* background-color: cadetblue; */
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1.8rem;
+  text-align: center;
+}
+
+.header {
+  width: 40%;
+  margin: 0 auto;
+  background-color: #394E3D; /*Toasted*/
+  background-image: url("./images/egg-shell.png");
+}
+
+.header h1{
+  font-family: 'Crimson Text', serif;
+  color: #f2f2f2;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.headerButtons{
+  width: 40%;
+  margin: 1.8rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerButton{
+  width: 30%;
+  height: 40px;
+  font-size: min(4vw,1.2rem);
+  font-family: 'Crimson Text', serif;
+  color: #FFE794;
+  background-color: #718468; /*Toasted*/
+  background-image: url("./images/egg-shell.png");
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid black;
+  transition-duration: 200ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerButton:hover{
+  background-color: #394E3D;
+  box-shadow: 0 0 0 2px  #f2f2f2, 0 0 0 3px #000;
+}
+
+.headerButton img{
+  /* align-self: center; */
+  width: 33px;
+  height: 20px;
+  pointer-events: none;
+  margin-left: -10px;
+}
+
+.container{
+  background-color: #718468; /*Wintergreen*/
+  background-image: url("./images/egg-shell.png");
+  width: 40%;
+  margin: 1.8rem auto;
+  padding: 1.8rem;
+  text-align: left;
+  border-radius: 20px;
+}
+
+.taskLabel{
+  display: flex;
+  justify-content: space-between;
+  /* background-color: brown; */
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+
+.taskLabel label{
+  color: #FFE794;
+  font-size: 1.2rem;
+  /* font-size: 1.125rem; */
+  font-family: 'Lora', serif; 
+  font-style: normal;
+  
+}
+
+.taskLabel label > input[type="checkbox"] { /*checkbox*/
+  width: 26px;
+  height: 26px;
+  margin-right: 1rem;
+}
+
+.taskLabel label *{
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.clickableButton{
+  cursor: pointer;
+  width: 33px;
+  height: 23px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clickableButton > span{
+  color: #718468;
+  font-family: "Josefin Sans", serif;
+  font-size: 2rem;
+  font-weight: bolder;
+  vertical-align: middle;
+}
+
+.addNewTaskContainer{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 40%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.addNewTaskContainer input{
+  text-align: center;
+  width: 70%;
+  vertical-align: bottom;
+  margin-right: 1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-bottom: 0.5rem;
+  background-image: radial-gradient(circle, #FFE794 3px, transparent 3px),
+                      linear-gradient(to right, #FFE794, #FFE794),
+                      radial-gradient(circle, #FFE794 3px, transparent 3px);
+  background-repeat: no-repeat;
+  background-size: 6px 6px, calc(100% - 8px) 6px, 6px 6px;
+  background-position: left bottom, center bottom, right bottom;
+
+}
+
+.addNewTaskContainer input[type="text"]::placeholder{
+  color: #FFE794;
+}
+
+.taskLabel button:hover ,.addNewTaskContainer button:hover{
+  background-color: #718468;
+  box-shadow: 0 0 0 2px  #f2f2f2, 0 0 0 3px #000;
+}
+
+@media (max-width: 1024px){
+
+  .App{
+    padding: 0;
+  }
+
+  .header, .headerButtons, .container, .addNewTaskContainer{
+    width: 100%;
+  }
+
+  .headerButton{
+    width: 40%;
+    /* font-size: 1.6rem; */
+  }
+
+}
