@@ -2,21 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Crimson Text', serif; */
-  /* font-size: 10px; */
   font-family: 'Lora', serif;
 }
 
 body{
   background: #eee;
   padding: 1rem;
-  background-color: #97AC83; /* Seafoam */
-  background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-color: #97AC83;
+  background-image: url("./images/egg-shell.png");
 }
 
 .App{
-  /* background-color: cadetblue; */
   width: 80%;
   margin: 1rem auto;
   padding: 1.8rem;
@@ -26,7 +22,7 @@ body{
 .header {
   width: 40%;
   margin: 0 auto;
-  background-color: #394E3D; /*Toasted*/
+  background-color: #394E3D;
   background-image: url("./images/egg-shell.png");
 }
 
@@ -50,7 +46,7 @@ body{
   font-size: min(4vw,1.2rem);
   font-family: 'Crimson Text', serif;
   color: #FFE794;
-  background-color: #718468; /*Toasted*/
+  background-color: #718468;
   background-image: url("./images/egg-shell.png");
   border-radius: 5px;
   cursor: pointer;
